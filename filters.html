@@ -1,0 +1,70 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS Filters</title>
+		<style>
+		body{
+			font-family: sans-serif;
+		}
+		div{
+		    background-color: #99CCFF;
+		    border:2px solid black;
+			border-radius: 10px;
+			display: inline-block;		
+			padding: 20px;
+			/*width:500px;*/
+		}
+		
+		.img{
+			float: left;
+			margin: 0 20px 20px 20px;
+			border:2px solid black;
+			filter: grayscale(1);
+			transition: filter 0.5s;
+		}
+		
+		.greyscale:hover{
+		    filter: grayscale(1);
+		}
+		.specsavers{
+		    filter: blur(10px);
+		}
+		
+			.dropshadow{
+		filter:dropshadow(10px);
+		}
+	
+		</style>
+		
+		
+		/*
+		blur()
+		brightness()
+		contrast()
+		drop-shadow()
+		grayscale()
+		hue-rotate()
+		invert()
+		opacity()
+		saturate()
+		sepia()
+		*/
+		
+	</head>
+	<body>
+		<div>
+			<h1>Original</h1>
+			<img class="box" src="images/owl.jpg" alt="owl" width="320" heigth="240"/>
+		</div>
+		
+		<div>
+			<h2>greyscale</h2>
+			<img class="greyscale" src="images/owl.jpg" alt="owl" width="320" heigth="240"/>
+		</div>
+		
+		<div>
+			<h3>brightness</h3>
+			<img class="dropshadow" src="images/owl.jpg" alt="owl" width="320" heigth="240"/>
+		</div>
+	</body>
+</html>

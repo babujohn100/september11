@@ -1,0 +1,78 @@
+
+/*
+for the mobile view
+*/
+
+nav ul li a {
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+nav ul li {
+    border-bottom: 1px solid #444;
+    background-color: #1D2026;
+    font-size: 30px;
+    padding: 10px 5px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+body {
+    background-color: #292E37;
+}
+
+
+.picture {
+    width: 100%
+}
+
+/*
+add the img tag for image2.jpg in the html
+give it the class of picture2
+change the css and media query so that picture is displayed on mobie
+and picture2 is displayed on desktop
+picture2 should be hidden on the mobile and picture should be hidden on the desktop
+*/
+
+.picture2{
+
+    display: none;
+}
+
+/*
+for the mobile display,set the .picture class to be 100% width 
+for the desktop display, set the .picture class to be 50% width
+*/
+
+/* for the laptop view*/
+
+@media(min-width: 414px) {
+    nav ul li {
+        display: inline-block;
+        font-size: 20px;
+        width: 50px
+    }
+    .picture {
+    
+        display: none;
+        
+    }
+
+.picture2{
+    display: block;
+}
+
+
+
+}
